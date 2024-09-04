@@ -18,6 +18,7 @@ export default function Home() {
 
     const response = await getSearchResults(query as string);
     console.log(response);
+    // Create boxes and append them to the container
 
     setRepositories(response);
     setLoading(false);
